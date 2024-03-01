@@ -14,7 +14,7 @@
 // console.log(data.name);
 var Personal;
 (function (Personal) {
-    Personal["NAME"] = "amir hossein";
+    Personal["NAME"] = "amir hosseinq";
     Personal[Personal["MALE"] = 0] = "MALE";
     Personal[Personal["FEMALE"] = 1] = "FEMALE";
 })(Personal || (Personal = {}));

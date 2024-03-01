@@ -14,7 +14,7 @@
 // console.log(data.name);
 
 enum Personal {
-  NAME = "amir hossein",
+  NAME = "amir hosseinq",
   MALE = 0,
   FEMALE = 1,
 }
