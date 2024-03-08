@@ -26,27 +26,44 @@
 //   role(3, true);
 // }
 
-interface User {
-  email: string;
-  password: number;
-}
-interface User {
-  id: number;
-}
+// interface User {
+//   email: string;
+//   password: number;
+// }
+// interface User {
+//   id: number;
+// }
 
-let user: User = {
-  id: 1,
-  email: "a@abstract.com",
-  password: 123,
+// let user: User = {
+//   id: 1,
+//   email: "a@abstract.com",
+//   password: 123,
+// };
+
+// class Auth implements User {
+//   id: number;
+//   email: string;
+//   password: number;
+//   name: string;
+// }
+
+// function login(userInfo: User) {}
+
+// login(new Auth());
+
+type InfoItem = {
+  description: string;
 };
 
-class Auth implements User {
-  id: number;
-  email: string;
-  password: number;
-  name: string;
-}
+type Skills = {
+  skills: string[];
+};
 
-function login(userInfo: User) {}
+type UserProfile = InfoItem & Skills;
 
-login(new Auth());
+let userInfo: InfoItem & Skills;
+
+userInfo = {
+  description: "im a programmer",
+  skills: ["js", "node"],
+};
