@@ -1,3 +1,13 @@
-let cartItems: Array<string | number>;
+// let cartItems: Array<string | number>;
 
-cartItems = ["", "", "", 2, 3, 6];
+// cartItems = ["", "", "", 2, 3, 6];
+
+function addProduct(title: string, price: number): void {
+  const product = title + price;
+  console.log(product);
+}
+
+function add(num1: number, num2: number): number {
+  const result = num1 + num2;
+  return result;
+}
