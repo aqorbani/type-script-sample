@@ -51,15 +51,32 @@
 
 // login(new Auth());
 
-type InfoItem = {
+// type InfoItem = {
+//   description: string;
+// };
+
+// type Skills = {
+//   skills: string[];
+// };
+
+// type UserProfile = InfoItem & Skills;
+
+// let userInfo: InfoItem & Skills;
+
+// userInfo = {
+//   description: "im a programmer",
+//   skills: ["js", "node"],
+// };
+
+interface InfoItem {
   description: string;
-};
+}
 
-type Skills = {
+interface Skills {
   skills: string[];
-};
+}
 
-type UserProfile = InfoItem & Skills;
+interface UserProfile extends InfoItem, Skills {}
 
 let userInfo: InfoItem & Skills;
 
