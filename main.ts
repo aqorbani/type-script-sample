@@ -68,19 +68,29 @@
 //   skills: ["js", "node"],
 // };
 
-interface InfoItem {
-  description: string;
-}
+// interface InfoItem {
+//   description: string;
+// }
 
-interface Skills {
-  skills: string[];
-}
+// interface Skills {
+//   skills: string[];
+// }
 
-interface UserProfile extends InfoItem, Skills {}
+// interface UserProfile extends InfoItem, Skills {}
 
-let userInfo: InfoItem & Skills;
+// let userInfo: InfoItem & Skills;
 
-userInfo = {
-  description: "im a programmer",
-  skills: ["js", "node"],
+// userInfo = {
+//   description: "im a programmer",
+//   skills: ["js", "node"],
+// };
+
+// type Product = "Book 1" | "Book 2";
+
+// let cartItem: Array<Product>;
+
+// cartItem = ["Book 1", "Book 1", "Book 2"];
+
+type Data<T> = {
+  dataType: [T];
 };
